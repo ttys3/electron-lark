@@ -91,6 +91,9 @@ function createWindow() {
             url = decodeURIComponent(url);
             shell.openExternal(url)
             return;
+        } else if(url.indexOf("http") == 0){
+            shell.openExternal(url)
+            return;
         } else {
             // 如果不是跳转到外部的链接
             // 将所有打开的新页面的 user agent 也重新设置，避免提示浏览器错误
@@ -108,7 +111,6 @@ function createWindow() {
             }
             event.newGuest = win;
         }
-
     })
 
     // 打开开发者模式
