@@ -22,24 +22,27 @@
   },
   "devDependencies": {
     "electron": "^8.2.2",
-    "electron-builder": "^22.4.1",
+    "electron-builder": "^22.10.5",
     "electron-package": "^0.1.0"
   },
-  "linux": {
-    "category": "Office",
-    "packageCategory": "Office",
-    "synopsis": "An Electron application for Feishu(Lark)",
-    "icon": "./build/icons",
-    "target": [
-      {
-        "target": "deb",
-        "arch": [
-          "x64"
-        ]
+  "build": {
+    "appId": "cn.lark.app",
+    "linux": {
+      "category": "Office",
+      "packageCategory": "Office",
+      "synopsis": "An Electron application for Feishu(Lark)",
+      "icon": "./build/icons",
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "desktop": {
+        "Encoding": "UTF-8"
       }
-    ],
-    "desktop": {
-      "Encoding": "UTF-8"
     }
   }
 }
