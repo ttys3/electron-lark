@@ -125,9 +125,16 @@ let appTryaInstance;
 
 const trayMenuTemplate = [
     {
-        label: '退出',
+        label: 'Show',
+        click: function () {
+            console.log("show from tray");
+            mainWindow.show();
+        }
+    },
+    {
+        label: 'Quit',
         click: function(){
-            console.log("从 tray 退出")
+            console.log("exit from tray");
             app.quit();
             mainWindow.destroy()
         }
