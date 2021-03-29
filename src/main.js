@@ -129,14 +129,14 @@ let appTryaInstance;
 
 const trayMenuTemplate = [
     {
-        label: 'Show',
+        label: 'Show Lark',
         click: function () {
             console.log("show from tray");
             mainWindow.show();
         }
     },
     {
-        label: 'Quit',
+        label: 'Quit Lark',
         click: function(){
             console.log("exit from tray");
             app.quit();
@@ -185,12 +185,6 @@ function stopBlingIcon() {
         blingTimer = null;
     }
     appTryaInstance.setImage(appConf.dock32)
-}
-
-
-// 修复 Application Menu上图标不显示
-if (process.env.XDG_CURRENT_DESKTOP == 'ubuntu:GNOME') {
-    process.env.XDG_CURRENT_DESKTOP = 'Unity';
 }
 
 // 通过监听屏幕 LOCK 和 UNLOCK 来重新 init tray
