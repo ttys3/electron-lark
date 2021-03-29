@@ -1,6 +1,6 @@
 {
   "name": "electron-lark",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/main.js",
   "description": "An Electron application for Feishu(Lark)",
   "author": "Ericwyn <ericwyn@meetwhy.com>",
@@ -21,7 +21,7 @@
     "start": "electron ."
   },
   "devDependencies": {
-    "electron": "^12.0.1",
+    "electron": "^12.0.2",
     "electron-builder": "^22.10.5"
   },
   "build": {
