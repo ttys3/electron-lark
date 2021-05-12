@@ -1,11 +1,11 @@
-# Electron-Lark
+# Lark-Gtk
 
  ![release-download-count](https://img.shields.io/github/downloads/Ericwyn/electron-lark/total.svg)
 
  ***下载地址: [Release](https://github.com/ttys3/lark-for-linux/releases)***
 
 
-electron 版的飞书 Feishu (原 Lark)，对网页版本进行封装
+Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装
 
 相比起普通网页版，功能如下
 
@@ -45,5 +45,5 @@ electron 版的飞书 Feishu (原 Lark)，对网页版本进行封装
 
 
 ## 安装方法 (二进制安装)
- - 请从 [Release](https://github.com/Ericwyn/electron-lark/releases) 页面直接下载及安装 （ubuntu 21.04 上测试通过）
+ - 请从 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面直接下载及安装 （ubuntu 21.04 上测试通过）
 
