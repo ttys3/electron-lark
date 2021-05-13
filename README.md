@@ -46,3 +46,7 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ## 安装方法 (二进制安装)
  - 请从 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面直接下载及安装 （ubuntu 21.04 上测试通过）
 
+
+## Thanks
+
+本gtk版有一些处理思路来自 <https://github.com/Ericwyn/electron-lark> 项目，感谢ing
