@@ -28,6 +28,9 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ![screen-shot](screenshot/electron-lark-1.png)
 
 ## 版本记录
+
+### v0.5.4
+- 优化通知 窗口在最顶层的时候不提示通知，避免干扰
  
 ### v1.0.3
  - 修复 ubuntu 下锁屏后 appTray 消失的问题
