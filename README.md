@@ -25,7 +25,7 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## 运行截图
 
-![screen-shot](screenshot/electron-lark-1.png)
+![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 版本记录
 
