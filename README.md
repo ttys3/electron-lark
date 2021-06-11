@@ -6,7 +6,6 @@ webkit2gtk wrapper for Lark (FeiShu)
 
  ***下载地址: [Release](https://github.com/ttys3/lark-for-linux/releases)***
 
-
 Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 相比起普通网页版，功能如下
@@ -28,6 +27,9 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 版本记录
+
+### v0.5.5
+- 修复如果将窗口切到后面（不是点x隐藏窗口)后，再点击 "show lark" 无法将窗口焦点拉到最顶层（最前面）的问题
 
 ### v0.5.4
 - 优化通知 窗口在最顶层的时候不提示通知，避免干扰
