@@ -1,6 +1,8 @@
 # Lark-Gtk
 
-webkit2gtk wrapper for Lark (FeiShu)
+Lark (FeiShu) for Linux
+
+飞书Linux客户端 （基于飞书web版）
 
  ![release-download-count](https://img.shields.io/github/downloads/Ericwyn/electron-lark/total.svg)
 
@@ -27,6 +29,10 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 版本记录
+
+### v0.6.1
+- 优化通知优先级设置（下载文件成功:High, 下载文件失败：Urgent， 普通消息：Low, 消息标题或内容里包含 "严重告警" 时：High）
+- 移除普通消息默认的 View 按钮。
 
 ### v0.6.0
 - 修复从通知点击弹出窗口后输入框失去焦点的问题
