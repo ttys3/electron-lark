@@ -4,7 +4,7 @@ Lark (FeiShu) for Linux
 
 飞书Linux客户端 （基于飞书web版）
 
- ![release-download-count](https://img.shields.io/github/downloads/Ericwyn/electron-lark/total.svg)
+ ![release-download-count](https://img.shields.io/github/downloads/ttys3/lark-for-linux/total.svg)
 
  ***下载地址: [Release](https://github.com/ttys3/lark-for-linux/releases)***
 
