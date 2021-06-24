@@ -28,7 +28,10 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
-## 版本记录
+## 更新记录
+
+### v0.9.1
+- 添加 `Update` 按钮用于快捷打开 release 页面下载更新版本的 app
 
 ### v0.9.0
 - 重新设定默认下载目录为 `~/Downloads/lark-gtk` (之前是~/Downloads)
