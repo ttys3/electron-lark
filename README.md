@@ -30,6 +30,10 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## 更新记录
 
+### v0.9.4
+- 升级到 gtk-rs 0.14.0 系列 crates
+- 修复 changelog 窗口 gtk `assertion 'WebCore::isValidUserAgentHeaderValue(userAgentString)' failed` 错误
+
 ### v0.9.2
 - 修复下载时文件存在检测问题
 
