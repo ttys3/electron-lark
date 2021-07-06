@@ -33,9 +33,6 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 <strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送, GNOME 自带浏览器 epiphany-browser 也有同样的问题, 已经确认这是 `webkit2gtk` 的问题, 见 <https://bugs.webkit.org/show_bug.cgi?id=218519> 和 <https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388></strike>
 
-2. 图片浏览器打开的图片，如果 ctrl+c 复制了，只能在图片浏览器保持打开时进行粘贴发送图片(epiphany-browser也有同样的问题, 可能是webkit2gtk的问题也有可能是 GNOME 实现问题)
-
-
 ## 运行截图
 
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
@@ -95,6 +92,9 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ## 安装方法 (二进制安装)
  - 请从 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面直接下载及安装 （ubuntu 21.04 上测试通过）
 
+## 其它 Tips
+ 
+> 图片浏览器打开的图片，如果 ctrl+c 复制了, 请保持图片浏览器打开, 直到已经ctrl +v 进行粘贴发送完了再关闭图片浏览器 (epiphany-browser也有同样的问题, 可能是webkit2gtk的问题也有可能是 GNOME 实现问题)
 
 ## Thanks
 
