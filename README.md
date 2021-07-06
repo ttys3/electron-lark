@@ -29,9 +29,11 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## Known issues
 
-1. 图片浏览器打开的图片，如果 ctrl+c 复制了，只能在图片浏览器保持打开时进行粘贴发送图片(epiphany-browser也有同样的问题, 因此可能是webkit2gtk的问题)
+截屏工具复制到 clipboard 的图片，暂时无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 请去 release 页面下载已经 patch 好的 webkitgtk 包安装即可.
 
-2. 截屏工具复制到clipboard的图片，暂时无法粘贴发送 (epiphany-browser也有同样的问题, 因此可能是webkit2gtk的问题), 这个貌似是 webkit 的问题，见 <https://bugs.webkit.org/show_bug.cgi?id=218519> 和 <https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388>
+<strike>1. 图片浏览器打开的图片，如果 ctrl+c 复制了，只能在图片浏览器保持打开时进行粘贴发送图片(epiphany-browser也有同样的问题, 因此可能是webkit2gtk的问题)</strike>
+
+<strike>2. 截屏工具复制到clipboard的图片，暂时无法粘贴发送 (epiphany-browser也有同样的问题, 因此可能是webkit2gtk的问题), 这个貌似是 webkit 的问题，见 <https://bugs.webkit.org/show_bug.cgi?id=218519> 和 <https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388></strike>
 
 
 ## 运行截图
