@@ -19,7 +19,7 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
   3. 下载文件成功
   4. 下载文件失败 
   5. 消息标题或内容里包含 "严重告警" 时
-  6. 除此之外 ，其它普通消息全部设置成 Low 级别）
+  6. 除此之外 ，其它普通消息全部设置成 Low 级别
 
 
 - 独立的运行窗口，不容易被误关闭
@@ -30,9 +30,9 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## Known issues
 
-截屏工具复制到 clipboard 的图片无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 请去 release 页面下载已经 patch 好的 webkitgtk 包安装即可.
+截屏工具复制到 clipboard 的图片无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 请去 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面下载已经 patch 好的 webkitgtk 包安装即可.
 
-<strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送, GNOME 自带浏览器 epiphany-browser 也有同样的问题, 已经确认这是 `webkit2gtk` 的问题, 见 <https://bugs.webkit.org/show_bug.cgi?id=218519> 和 <https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388></strike>
+<strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送, GNOME 自带浏览器 epiphany-browser 也有同样的问题, 已经确认这是 `webkit2gtk` 的问题, 见 https://bugs.webkit.org/show_bug.cgi?id=218519 和 https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388 </strike>
 
 ## 运行截图
 
