@@ -30,15 +30,26 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## Known issues
 
-截屏工具复制到 clipboard 的图片无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 请去 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面下载已经 patch 好的 webkitgtk 包安装即可.
+截屏工具复制到 clipboard 的图片无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 
+请去 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面下载已经 patch 好的 webkitgtk 包安装即可.
 
-<strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送</strike> (通过 patch webkit2gtk 解决), GNOME 自带浏览器 epiphany-browser 也有同样的问题, 已经确认这是 `webkit2gtk` 的问题, 见 https://bugs.webkit.org/show_bug.cgi?id=218519 和 https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388 
+<strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送</strike> (通过 patch webkit2gtk 解决), GNOME 自带浏览器 epiphany-browser 也有同样的问题, 
+已经确认这是 `webkit2gtk` 的问题, 见 https://bugs.webkit.org/show_bug.cgi?id=218519 和 https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388 
 
 ## 运行截图
 
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 更新记录
+
+### v1.0.0
+- 升级到 gtk-rs 0.15.x 系列 crates
+- 升级 webkit2gtk crate 到 0.18.2, webkit2gtk 版本 v2.36
+- libappindicator-rs use https://github.com/tauri-apps/libappindicator-rs.git
+- HardwareAccelerationPolicy 设置为 Always
+- new feature: support auto remove external group chat messages watermark background image
+- refine Notification handling
+- fix: 修复内存泄露问题 (WebKitWebProcess 和 WebKitWebExtension 进程无法正常退出的问题)
 
 ### v0.9.4
 - 升级到 gtk-rs 0.14.0 系列 crates
