@@ -30,11 +30,29 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## Known issues
 
+### 1. Ctrl+V 无法在聊天框直接粘贴图片的问题
+
 截屏工具复制到 clipboard 的图片无法粘贴发送的问题已经解决, 这个问题不在于软件本身,而在于 `webkitgtk` 引擎, 
 请去 [Release](https://github.com/ttys3/lark-for-linux/releases) 页面下载已经 patch 好的 webkitgtk 包安装即可.
 
-<strike>1. 截屏工具复制到clipboard的图片，暂时无法粘贴发送</strike> (通过 patch webkit2gtk 解决), GNOME 自带浏览器 epiphany-browser 也有同样的问题, 
+<strike>截屏工具复制到clipboard的图片，暂时无法粘贴发送</strike> (通过 patch webkit2gtk 解决), GNOME 自带浏览器 epiphany-browser 也有同样的问题, 
 已经确认这是 `webkit2gtk` 的问题, 见 https://bugs.webkit.org/show_bug.cgi?id=218519 和 https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388 
+
+### 2. 通知权限问题
+
+请设置  `APP_LARK_URL` 环境变量:
+
+可以修改 `com.github.ttys3.lark-gtk.desktop` 文件
+```ini
+Exec=env APP_LARK_URL=https://xxxx.feishu.cn/messenger/ /usr/bin/lark-gtk %U
+```
+
+或者加到 `/etc/environment`
+```
+APP_LARK_URL=https://xxxx.feishu.cn/messenger/
+```
+
+`xxxx` 为你们公司的标识. 打开  https://feishu.cn/messenger/ 会自动跳到那个地址.
 
 ## 运行截图
 
