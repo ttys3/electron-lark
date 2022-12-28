@@ -67,7 +67,7 @@ APP_LARK_URL=https://xxxx.feishu.cn/messenger/
 - HardwareAccelerationPolicy 设置为 Always
 - new feature: support auto remove external group chat messages watermark background image
 - refine Notification handling
-- fix: 修复内存泄露问题 (WebKitWebProcess 和 WebKitWebExtension 进程无法正常退出的问题)
+- fix: 修复内存泄露问题 (WebKitWebProcess 和 WebKitNetworkProcess 进程无法正常退出的问题)
 
 ### v0.9.4
 - 升级到 gtk-rs 0.14.0 系列 crates
