@@ -38,27 +38,15 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 <strike>截屏工具复制到clipboard的图片，暂时无法粘贴发送</strike> (通过 patch webkit2gtk 解决), GNOME 自带浏览器 epiphany-browser 也有同样的问题, 
 已经确认这是 `webkit2gtk` 的问题, 见 https://bugs.webkit.org/show_bug.cgi?id=218519 和 https://gitlab.gnome.org/GNOME/epiphany/-/issues/1388 
 
-### 2. 通知权限问题
-
-请设置  `APP_LARK_URL` 环境变量:
-
-可以修改 `com.github.ttys3.lark-gtk.desktop` 文件
-```ini
-Exec=env APP_LARK_URL=https://xxxx.feishu.cn/messenger/ /usr/bin/lark-gtk %U
-```
-
-或者加到 `/etc/environment`
-```
-APP_LARK_URL=https://xxxx.feishu.cn/messenger/
-```
-
-`xxxx` 为你们公司的标识. 打开  https://feishu.cn/messenger/ 会自动跳到那个地址.
-
 ## 运行截图
 
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 更新记录
+
+### v1.0.1
+- 不弹出 "desktop notification permission not granted!" alert (当未设置 `APP_LARK_URL=https://xxxx.feishu.cn/messenger/` 时)
+  此时, 实际上 notification permission 是 OK 的.
 
 ### v1.0.0
 - 升级到 gtk-rs 0.15.x 系列 crates
@@ -124,7 +112,25 @@ APP_LARK_URL=https://xxxx.feishu.cn/messenger/
 
 ## 其它 Tips
  
+### 1. 图片复制粘贴问题
+
 > 图片浏览器打开的图片，如果 ctrl+c 复制了, 请保持图片浏览器打开, 直到已经ctrl +v 进行粘贴发送完了再关闭图片浏览器 (epiphany-browser也有同样的问题, 可能是webkit2gtk的问题也有可能是 GNOME 实现问题)
+
+### 2. 通知权限问题
+
+如果无法正常接收通知, 请设置  `APP_LARK_URL` 环境变量. 
+
+可以修改 `com.github.ttys3.lark-gtk.desktop` 文件
+```ini
+Exec=env APP_LARK_URL=https://xxxx.feishu.cn/messenger/ /usr/bin/lark-gtk %U
+```
+
+或者加到 `/etc/environment`
+```
+APP_LARK_URL=https://xxxx.feishu.cn/messenger/
+```
+
+`xxxx` 为你们公司的标识. 打开  https://feishu.cn/messenger/ 会自动跳到那个地址.
 
 ## Thanks
 
