@@ -44,6 +44,17 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## 更新记录
 
+### v2.1.0
+- perf: use shared web context which will make WebKitWebProcess use shared WebKitNetworkProcess (just like GNOME epiphany)
+- chore: disable connect_mouse_target_changed
+- 点击关闭按钮隐藏改为最小化到任务栏
+- refine watermark remove implementation
+
+### v2.0.0
+- 从 gtk3 升级到 gtk4
+- 移除托盘图标, 因为依赖的 system tray 实现 [libappindicator](https://github.com/AyatanaIndicators/libayatana-appindicator) 不支持 gtk4
+- fix: call ` terminate_web_process()` when changelog webkit exit
+
 ### v1.0.1
 - 不弹出 "desktop notification permission not granted!" alert (当未设置 `APP_LARK_URL=https://xxxx.feishu.cn/messenger/` 时)
   此时, 实际上 notification permission 是 OK 的.
@@ -118,9 +129,9 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ### 2. 通知权限问题
 
-如果无法正常接收通知, 请设置  `APP_LARK_URL` 环境变量. 
+关于每次退出后打开会显示一次需要允许桌面通知的提示, 请设置  `APP_LARK_URL` 环境变量. 
 
-可以修改 `com.github.ttys3.lark-gtk.desktop` 文件
+可以修改 `com.github.ttys3.lark_gtk.desktop` 文件
 ```ini
 Exec=env APP_LARK_URL=https://xxxx.feishu.cn/messenger/ /usr/bin/lark-gtk %U
 ```
