@@ -44,6 +44,11 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## 更新记录
 
+### v2.1.2
+
+updated to gtk-rs 0.8, glib and gio 0.19 version
+added flatpak build
+
 ### v2.1.0
 - perf: use shared web context which will make WebKitWebProcess use shared WebKitNetworkProcess (just like GNOME epiphany)
 - chore: disable connect_mouse_target_changed
