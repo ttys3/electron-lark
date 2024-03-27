@@ -48,6 +48,8 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 webkitgtk: enable Hardware Acceleration for better performance
 
+update to webkitgtk-2.44.0
+
 ### v2.1.2
 
 updated to gtk-rs 0.8, glib and gio 0.19 version
