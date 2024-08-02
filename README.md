@@ -44,9 +44,32 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 
 ## 更新记录
 
+### v2.1.7
+
+chore: update webkit6 to 0.4, gtk4 to 0.9
+
+### v2.1.6
+
+webview: open most of external links (include feishu project and docs) in system brower instead of webview
+
+### v2.1.5
+
+chore: add view Directory action button for download skip notification
+fix(notification): ensure view action activates on download skip
+   > Failed to activate action for io.github.ttys3.LarkGtk: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: Invalid parameter for action ‘view-notify’: expected type s but got type ay
+
+refactor: correct handle exists file skip download logic
+refactor: refine action target value var name
+chore: add note about DMABuf renderer
+chore: update user agent version due to lark project browser uprade notice
+chore: update webkit6 and gtk to use latest features
+chore(logging): show source file location
+
 ### v2.1.4
 
 update to webkitgtk-2.44.1
+chore: update to org.gnome.Platform runtime version 46
+perf: do not set WEBKIT_DISABLE_DMABUF_RENDERER  to enable hardware acceleration
 
 ### v2.1.3
 
