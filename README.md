@@ -43,6 +43,21 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 更新记录
+### v2.1.9
+
+style: adjust default window size
+
+build: build binary via flatpak
+
+chore: update runtime version to '47' in flatpak configuration
+
+### v2.1.8
+
+fix: update Mac OS Safari version to use Feishu web 7.24.0 (otherwise it will fallback to old web UI)
+
+chore: update default URL for app configuration  
+
+chore: add .feishu.cn/minutes/ to directly open urls
 
 ### v2.1.7
 
