@@ -43,6 +43,13 @@ Gtk 版的飞书 Feishu (原 Lark)，对网页版本进行封装。
 ![screen-shot](lark-gtk-2021-06-10_13-26.png?raw=true)
 
 ## 更新记录
+
+### v2.1.10
+
+build: update to webkitgtk 2.46.1
+
+build: rebuild with webkitgtk 2.46.1
+
 ### v2.1.9
 
 style: adjust default window size
